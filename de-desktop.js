@@ -1,4 +1,4 @@
-   define(['pipAPI', 'https://raw.githubusercontent.com/leonschreiber96/custom-iat/main/xxx.js'], function (APIConstructor, iatExtension) {
+   define(['pipAPI', 'https://cdn.jsdelivr.net/gh/leonschreiber96/custom-iat@main/xxx.js'], function (APIConstructor, iatExtension) {
       var API = new APIConstructor();
 
       return iatExtension({
