@@ -2,7 +2,7 @@
 
 Customized code files derived from https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualtrics/quiat9.js for a Unipark survey project at FU Berlin.
 
-- ``xxx.js``: code that is shared between all lamguages and device types
+- ``xxx.js``: code that is shared between all languages and device types
 - ``de-desktop.js`` (code for German IAT on desktop)
 - ``de-touch.js`` (code for German IAT on mobile)
 - ``en-desktop.js`` (code for English IAT on desktop)
