@@ -458,10 +458,20 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					}
 			},
 			// Set logs into an input (i.e. put them wherever you want)
-			send: function (name, serialized) {	
-			console.log("SEND", name, serialized)
+			send: function (name, serialized) {
+				console.log("SEND", name, serialized)
 				document.getElementById("csvDump").value += serialized;
 					window.minnoJS.logger(serialized);
+				let csvDump = document.getElementById("csvDump")
+			      let csv = csvDump.value;
+			      let dValue = csv.split("\n").slice(-1)[0].split(",")[10];
+			      let dValueInvalid = +!dValue;
+			      console.log("D:", dValue, "Valid:", dValueInvalid==0);
+			      let dValueInvalidDump = document.getElementById("dValueInvalidDump");
+			      dValueInvalidDump.value = dValueInvalid;
+			      let dValueDump = document.getElementById("dValueDump");
+			      dValueDump.value = dValueInvalid ? '0' : dValue;
+			
             }
 		});
 
